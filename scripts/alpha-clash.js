@@ -20,6 +20,13 @@ function continueGame(){
     console.log('your random Alphabet', alphabet);
     
 
+    // set randomly generated  alphabet to the screen (show it)
+    const currentAlphabetElement = document.getElementById('current-alphabet');
+    currentAlphabetElement.innerText = alphabet;
+
+    //Set backlground color
+    setBackgroundColorById(alphabet);
+
 }
 
 
