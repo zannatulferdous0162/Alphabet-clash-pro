@@ -14,6 +14,19 @@ function setBackgroundColorById(elementId){
     element.classList.add('bg-orange-500');
 }
 
+function removeBackgroundColorById(elementId){
+    const element = document.getElementById(elementId);
+    element.classList.remove('bg-orange-500');
+}
+
+function textElementValueById(elementId){
+    const element = document.getElementById(elementId);
+    const elementValueText = element.innerText;
+    const value = parseInt(elementValueText);
+    return value;
+
+}
+
 function getRandomAlphabet(){
     //get or create alphabet array
     const alphabetString = 'abcdefghijklmnopqrstuvwxyz';
