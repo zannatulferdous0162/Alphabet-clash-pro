@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+        <ul>
+          <li>item 1</li>
+          <li>item 2</li>
+          <li>item 3</li>
+        </ul>
+      <script>
+        var listItems=document.querySelectorAll("li");
+        console.log(listItems);// it will return a nodelist
+      </script>
+      <!--  -->
+
+      
+        <form>
+          <input type="text" name="username"/>
+          <input type="password" name="password"/>
+          <button type="submit">submit</button>
+        </form>
+        <p>This example is for Html collection 1..</p>
+        <p>This example is for Html collection 2..</p>
+        <p>This example is for Html collection 3..</p>
+    
+        <script>
+          // getElementsByTagName will return HTMLCollection
+          const paragraphs=document.getElementsByTagName("p");
+          console.log(paragraphs);
+    
+          let firstParagraph=paragraphs[0];
+          console.log(firstParagraph);
+    
+          var formElements=document.forms[0].elements;
+          console.log(formElements);// it will return a HTMLCollection
+        </script>
+    
+</body>
+</html>
