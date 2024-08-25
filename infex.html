@@ -17,19 +17,19 @@
 <body class="min-h-screen bg-[#1E1E1E] bg-[url(images/background.png)] bg-no-repeat bg-center">
     <main class="font-poppins">
         <!-- home screen -->
-        <section class="home min-h-screen text-white flex flex-col   items-center justify-center hidden">
-            <div class="flex flex-col items-center gap-8   border">
-                <h1 class="text-8xl fo font-anton font-semibold">ALPHABET CLASH</h1>
+        <section id="home-screen" class="min-h-screen text-white flex flex-col  items-center justify-center">
+            <div class="flex flex-col items-center space-y-6">
+                <h1 class="text-8xl font-anton font-semibold">ALPHABET CLASH</h1>
                 <p class="text-2xl font-medium">Unleash Your Keyboard Kung Fu : Press “Enter” to Play </p>
-                <button class="btn bg-white text-black font-poppins font-bold text-2xl ">Play</button>
+                <button onclick="play()" class="btn bg-white text-black font-poppins font-bold text-2xl ">Play</button>
             </div>
         </section>
         <!-- playground start -->
-        <section class="play-ground hidden">
+        <section id="play-ground" class="hidden">
             <div class="flex flex-col  items-center  gap-14">
                 <!-- screen -->
                 <div class="artboard artboard-horizontal phone-6 border-[20px]
-                rounded-2xl border-[#010313cc] bg-[#ffffffb3]">
+                rounded-2xl border-[#010313cc] bg-[#ffffffb3] mt-6">
 
                     <div class="text-white flex justify-center rounded-e">
                         <p class="bg-[#2F2941] font-poppins font-medium px-6 pb-4  rounded-b-xl ">Don't watch keyboard
@@ -95,7 +95,8 @@
 
         </section>
         <!-- playground end -->
-        <section class="score flex flex-col justify-center items-center min-h-screen border">
+         <!-- score section -->
+        <section class="score flex flex-col justify-center items-center min-h-screen hidden">
             <div class="border text-center space-y-6 bg-[#FFFFFF33] p-4 rounded-lg">
                 <h1 class="text-8xl font-poppins text-white">
                     <span class="font-extrabold  ">Score :</span>
@@ -108,6 +109,8 @@
             </div>
         </section>
     </main>
+    <script src="scripts/utility.js"></script>
+    <script src="scripts/alpha-clash.js"></script>
 </body>
 
 </html>
