@@ -8,6 +8,15 @@ function showElementById(elementId) {
     playgroundSection.classList.remove('hidden');
 }
 
+function setBackgroundColorById (elementId){
+    const setBackground = document.getElementById(elementId);
+    setBackground.classList.add('bg-orange-600');
+}
+function removeBackgroundColor(elementId){
+    const element = document.getElementById(elementId);
+    element.classList.remove('bg-orange-600');
+}
+
 function getRandomAlphabet() {
     //create an alphabet arry
     const alphabetString = 'abcdefghijklmnopqrstwxyz';
@@ -17,6 +26,6 @@ function getRandomAlphabet() {
     const index = Math.round(randomAlphabet);
     //set alphabet
     const alphabet = alphabets[index];
-    console.log(alphabets, index, alphabet);
+    // console.log(alphabets, index, alphabet);
     return alphabet;
 }
