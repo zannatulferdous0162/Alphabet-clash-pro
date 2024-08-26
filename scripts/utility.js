@@ -8,11 +8,11 @@ function showElementById(elementId) {
     playgroundSection.classList.remove('hidden');
 }
 
-function setBackgroundColorById (elementId){
+function setBackgroundColorById(elementId) {
     const setBackground = document.getElementById(elementId);
     setBackground.classList.add('bg-orange-600');
 }
-function removeBackgroundColor(elementId){
+function removeBackgroundColor(elementId) {
     const element = document.getElementById(elementId);
     element.classList.remove('bg-orange-600');
 }
