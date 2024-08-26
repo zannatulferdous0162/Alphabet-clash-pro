@@ -16,6 +16,12 @@ function removeBackgroundColor(elementId) {
     const element = document.getElementById(elementId);
     element.classList.remove('bg-orange-600');
 }
+function getTextValueById(elementId){
+    const currentScoreElement = document.getElementById(elementId);
+    const currentScoreText = currentScoreElement.innerText;
+    const currentScore = parseInt(currentScoreText);
+    return currentScore;
+}
 
 function getRandomAlphabet() {
     //create an alphabet arry

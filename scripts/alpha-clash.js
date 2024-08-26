@@ -8,21 +8,21 @@ document.addEventListener('keyup', function handleKeyboardButtonpress(event) {
 
     //check the point
     if (currentAlphabet === playerPressed) {
-        //update score
-        const currentScoreElement = document.getElementById('current-score');
-        const currentScoreText = currentScoreElement.innerText;
-        const currentScore = parseInt(currentScoreText);
-    
+      const currentScore =  getTextValueById('current-score');
+      
         const newScore = currentScore + 1;
-        currentScoreElement.innerText = newScore
+        currentScore.innerText = newScore
         console.log(currentScore);
         
-
-
         removeBackgroundColor(currentAlphabet);// start a new round
         continueGame();
     } else {
-        console.log('bad');
+        // const lifeUpdateElements = document.getElementById('update-life');
+        // const lifeUpdateText = lifeUpdateElements.innerText;
+        // const lifeUpdate = parseInt(lifeUpdateText);
+
+        // const currentLife = lifeUpdate -1;
+        // lifeUpdateElements.innerText = currentLife;
     }
 })
 
