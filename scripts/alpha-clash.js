@@ -15,9 +15,14 @@ document.addEventListener('keyup', function handleKeyboardButtonpress(event) {
         removeBackgroundColor(currentAlphabet);// start a new round
         continueGame();
     } else {
-        const currentLife = getTextValueById('update-life');
+        const currentLife = getTextValueById('currebt-life');
         const updatedLife = currentLife - 1;
-        setTextElementValueById('update-life', updatedLife);
+        setTextElementValueById('currebt-life', updatedLife);
+
+        if(updatedLife === 0 ){
+            console.log('u fokir');
+            
+        }
     }
 })
 
