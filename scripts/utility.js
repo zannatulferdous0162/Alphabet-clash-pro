@@ -22,6 +22,10 @@ function getTextValueById(elementId){
     const currentScore = parseInt(currentScoreText);
     return currentScore;
 }
+function setTextElementValueById(elementId,value){
+    const element = document.getElementById(elementId);
+    element.innerText = value;
+}
 
 function getRandomAlphabet() {
     //create an alphabet arry

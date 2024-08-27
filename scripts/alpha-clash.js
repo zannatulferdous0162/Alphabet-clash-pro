@@ -8,21 +8,16 @@ document.addEventListener('keyup', function handleKeyboardButtonpress(event) {
 
     //check the point
     if (currentAlphabet === playerPressed) {
-      const currentScore =  getTextValueById('current-score');
-      
-        const newScore = currentScore + 1;
-        currentScore.innerText = newScore
-        console.log(currentScore);
-        
+        const currentScore = getTextValueById('current-score');
+
+        const updatedScore = currentScore + 1;
+        setTextElementValueById('current-score', updatedScore);//updated score
         removeBackgroundColor(currentAlphabet);// start a new round
         continueGame();
     } else {
-        // const lifeUpdateElements = document.getElementById('update-life');
-        // const lifeUpdateText = lifeUpdateElements.innerText;
-        // const lifeUpdate = parseInt(lifeUpdateText);
-
-        // const currentLife = lifeUpdate -1;
-        // lifeUpdateElements.innerText = currentLife;
+        const currentLife = getTextValueById('update-life');
+        const updatedLife = currentLife - 1;
+        setTextElementValueById('update-life', updatedLife);
     }
 })
 
