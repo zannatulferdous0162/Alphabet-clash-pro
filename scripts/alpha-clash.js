@@ -17,13 +17,13 @@ document.addEventListener('keyup', function handleKeyboardButtonpress(event) {
     } else {
         const currentLife = getTextValueById('currebt-life');
         const updatedLife = currentLife - 1;
-//         setTextElementValueById('currebt-life', updatedLife);
+        setTextElementValueById('currebt-life', updatedLife);
 
-//         if(updatedLife === 0 ){
+        if(updatedLife === 0 ){
             
-//         }
-//     }
-// })
+        }
+    }
+})
 
 
 
