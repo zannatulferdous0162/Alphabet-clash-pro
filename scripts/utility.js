@@ -26,6 +26,11 @@ function setTextElementValueById(elementId,value){
     const element = document.getElementById(elementId);
     element.innerText = value;
 }
+function getElementTextById(elementId, value){
+const element =document.getElementById(elementId);
+    const text = element.innerText;
+    return text;
+}
 
 function getRandomAlphabet() {
     //create an alphabet arry
